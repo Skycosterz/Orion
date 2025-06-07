@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Endel-inspired color palette */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 92%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 90%;
+
+    --primary: 280 100% 65%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 280 50% 25%;
+    --accent-foreground: 0 0% 90%;
+
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 4%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 8%;
+    --ring: 280 100% 65%;
+
+    --radius: 1.5rem;
+
+    /* Endel gradient colors */
+    --gradient-1: 280 100% 65%;
+    --gradient-2: 320 100% 70%;
+    --gradient-3: 240 100% 60%;
+    --gradient-4: 200 100% 65%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 92%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 90%;
+
+    --primary: 280 100% 65%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 280 50% 25%;
+    --accent-foreground: 0 0% 90%;
+
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 4%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 8%;
+    --ring: 280 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+}
+
+@layer utilities {
+  .endel-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gradient-1)) 0%,
+      hsl(var(--gradient-2)) 25%,
+      hsl(var(--gradient-3)) 50%,
+      hsl(var(--gradient-4)) 100%
+    );
+  }
+
+  .endel-gradient-subtle {
+    background: linear-gradient(
+      135deg,
+      hsla(var(--gradient-1), 0.1) 0%,
+      hsla(var(--gradient-2), 0.1) 25%,
+      hsla(var(--gradient-3), 0.1) 50%,
+      hsla(var(--gradient-4), 0.1) 100%
+    );
+  }
+
+  .endel-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+  }
+
+  .endel-button {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .endel-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+  }
+
+  .endel-glow {
+    box-shadow: 0 0 40px hsla(var(--primary), 0.3);
+  }
+
+  .endel-text-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gradient-1)),
+      hsl(var(--gradient-2))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .endel-pulse {
+    animation: endel-pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes endel-pulse {
+    0%,
+    100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  .endel-float {
+    animation: endel-float 6s ease-in-out infinite;
+  }
+
+  @keyframes endel-float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
