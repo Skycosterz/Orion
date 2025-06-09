@@ -161,11 +161,11 @@ const DetoxSession = ({
           const gainAlpha2 = audioContext.createGain();
           const gainBrown = audioContext.createGain();
 
-          gainOsc1.gain.setValueAtTime(0.08, audioContext.currentTime);
-          gainOsc2.gain.setValueAtTime(0.08, audioContext.currentTime);
-          gainAlpha1.gain.setValueAtTime(0.05, audioContext.currentTime);
-          gainAlpha2.gain.setValueAtTime(0.05, audioContext.currentTime);
-          gainBrown.gain.setValueAtTime(0.03, audioContext.currentTime);
+          gainOsc1.gain.setValueAtTime(0.58, audioContext.currentTime);
+          gainOsc2.gain.setValueAtTime(0.58, audioContext.currentTime);
+          gainAlpha1.gain.setValueAtTime(0.55, audioContext.currentTime);
+          gainAlpha2.gain.setValueAtTime(0.55, audioContext.currentTime);
+          gainBrown.gain.setValueAtTime(0.53, audioContext.currentTime);
 
           oscillator.connect(gainOsc1);
           oscillator2.connect(gainOsc2);
@@ -231,11 +231,11 @@ const DetoxSession = ({
           const gainWave = audioContext.createGain();
           const gainRain = audioContext.createGain();
 
-          gainMain.gain.setValueAtTime(0.06, audioContext.currentTime);
-          gainDelta1.gain.setValueAtTime(0.04, audioContext.currentTime);
-          gainDelta2.gain.setValueAtTime(0.04, audioContext.currentTime);
-          gainWave.gain.setValueAtTime(0.08, audioContext.currentTime);
-          gainRain.gain.setValueAtTime(0.05, audioContext.currentTime);
+          gainMain.gain.setValueAtTime(0.56, audioContext.currentTime);
+          gainDelta1.gain.setValueAtTime(0.54, audioContext.currentTime);
+          gainDelta2.gain.setValueAtTime(0.54, audioContext.currentTime);
+          gainWave.gain.setValueAtTime(0.58, audioContext.currentTime);
+          gainRain.gain.setValueAtTime(0.55, audioContext.currentTime);
 
           waveLfo.connect(waveLfoGain);
           waveLfoGain.connect(waveOsc.frequency);
@@ -300,12 +300,12 @@ const DetoxSession = ({
           const gainTheta1 = audioContext.createGain();
           const gainTheta2 = audioContext.createGain();
 
-          gainMain.gain.setValueAtTime(0.1, audioContext.currentTime);
-          gainHarm2.gain.setValueAtTime(0.06, audioContext.currentTime);
-          gainHarm3.gain.setValueAtTime(0.04, audioContext.currentTime);
-          gainHarm4.gain.setValueAtTime(0.02, audioContext.currentTime);
-          gainTheta1.gain.setValueAtTime(0.03, audioContext.currentTime);
-          gainTheta2.gain.setValueAtTime(0.03, audioContext.currentTime);
+          gainMain.gain.setValueAtTime(0.51, audioContext.currentTime);
+          gainHarm2.gain.setValueAtTime(0.56, audioContext.currentTime);
+          gainHarm3.gain.setValueAtTime(0.54, audioContext.currentTime);
+          gainHarm4.gain.setValueAtTime(0.52, audioContext.currentTime);
+          gainTheta1.gain.setValueAtTime(0.53, audioContext.currentTime);
+          gainTheta2.gain.setValueAtTime(0.53, audioContext.currentTime);
 
           breathLfo.connect(breathGain);
           breathGain.connect(gainMain.gain);
@@ -378,11 +378,11 @@ const DetoxSession = ({
           const gainChirp = audioContext.createGain();
           const gainWind = audioContext.createGain();
 
-          gainMain.gain.setValueAtTime(0.08, audioContext.currentTime);
-          gainBeta1.gain.setValueAtTime(0.05, audioContext.currentTime);
-          gainBeta2.gain.setValueAtTime(0.05, audioContext.currentTime);
-          gainChirp.gain.setValueAtTime(0.03, audioContext.currentTime);
-          gainWind.gain.setValueAtTime(0.06, audioContext.currentTime);
+          gainMain.gain.setValueAtTime(0.58, audioContext.currentTime);
+          gainBeta1.gain.setValueAtTime(0.55, audioContext.currentTime);
+          gainBeta2.gain.setValueAtTime(0.55, audioContext.currentTime);
+          gainChirp.gain.setValueAtTime(0.53, audioContext.currentTime);
+          gainWind.gain.setValueAtTime(0.56, audioContext.currentTime);
 
           chirpLfo.connect(chirpLfoGain);
           chirpLfoGain.connect(chirpOsc.frequency);
@@ -449,10 +449,10 @@ const DetoxSession = ({
           const gainEnergy2 = audioContext.createGain();
           const gainPerc = audioContext.createGain();
 
-          gainBass.gain.setValueAtTime(0.12, audioContext.currentTime);
-          gainEnergy1.gain.setValueAtTime(0.06, audioContext.currentTime);
-          gainEnergy2.gain.setValueAtTime(0.04, audioContext.currentTime);
-          gainPerc.gain.setValueAtTime(0.08, audioContext.currentTime);
+          gainBass.gain.setValueAtTime(0.52, audioContext.currentTime);
+          gainEnergy1.gain.setValueAtTime(0.56, audioContext.currentTime);
+          gainEnergy2.gain.setValueAtTime(0.54, audioContext.currentTime);
+          gainPerc.gain.setValueAtTime(0.58, audioContext.currentTime);
 
           // Connect pulse to modulate bass
           pulseOsc.connect(pulseGain);
@@ -523,10 +523,10 @@ const DetoxSession = ({
           const gainMovement = audioContext.createGain();
           const gainAc = audioContext.createGain();
 
-          gainMain.gain.setValueAtTime(0.08, audioContext.currentTime);
-          gainEngine.gain.setValueAtTime(0.1, audioContext.currentTime);
-          gainMovement.gain.setValueAtTime(0.05, audioContext.currentTime);
-          gainAc.gain.setValueAtTime(0.06, audioContext.currentTime);
+          gainMain.gain.setValueAtTime(0.58, audioContext.currentTime);
+          gainEngine.gain.setValueAtTime(0.51, audioContext.currentTime);
+          gainMovement.gain.setValueAtTime(0.55, audioContext.currentTime);
+          gainAc.gain.setValueAtTime(0.56, audioContext.currentTime);
 
           engineLfo.connect(engineLfoGain);
           engineLfoGain.connect(engineOsc.frequency);
@@ -593,10 +593,10 @@ const DetoxSession = ({
           const gainWarm = audioContext.createGain();
           const gainBreeze = audioContext.createGain();
 
-          gainMain.gain.setValueAtTime(0.08, audioContext.currentTime);
-          gainCricket.gain.setValueAtTime(0.03, audioContext.currentTime);
-          gainWarm.gain.setValueAtTime(0.06, audioContext.currentTime);
-          gainBreeze.gain.setValueAtTime(0.05, audioContext.currentTime);
+          gainMain.gain.setValueAtTime(0.58, audioContext.currentTime);
+          gainCricket.gain.setValueAtTime(0.53, audioContext.currentTime);
+          gainWarm.gain.setValueAtTime(0.56, audioContext.currentTime);
+          gainBreeze.gain.setValueAtTime(0.55, audioContext.currentTime);
 
           cricketLfo.connect(cricketLfoGain);
           cricketLfoGain.connect(gainCricket.gain);
@@ -661,10 +661,10 @@ const DetoxSession = ({
           const gainSparkle2 = audioContext.createGain();
           const gainBurst = audioContext.createGain();
 
-          gainMain.gain.setValueAtTime(0.07, audioContext.currentTime);
-          gainSparkle1.gain.setValueAtTime(0.04, audioContext.currentTime);
-          gainSparkle2.gain.setValueAtTime(0.03, audioContext.currentTime);
-          gainBurst.gain.setValueAtTime(0.05, audioContext.currentTime);
+          gainMain.gain.setValueAtTime(0.57, audioContext.currentTime);
+          gainSparkle1.gain.setValueAtTime(0.54, audioContext.currentTime);
+          gainSparkle2.gain.setValueAtTime(0.53, audioContext.currentTime);
+          gainBurst.gain.setValueAtTime(0.55, audioContext.currentTime);
 
           flowLfo.connect(flowGain);
           flowGain.connect(oscillator.frequency);
@@ -728,10 +728,10 @@ const DetoxSession = ({
           const gainWhoosh = audioContext.createGain();
           const gainMelody = audioContext.createGain();
 
-          gainMain.gain.setValueAtTime(0.06, audioContext.currentTime);
-          gainHeart.gain.setValueAtTime(0.04, audioContext.currentTime);
-          gainWhoosh.gain.setValueAtTime(0.05, audioContext.currentTime);
-          gainMelody.gain.setValueAtTime(0.03, audioContext.currentTime);
+          gainMain.gain.setValueAtTime(0.56, audioContext.currentTime);
+          gainHeart.gain.setValueAtTime(0.54, audioContext.currentTime);
+          gainWhoosh.gain.setValueAtTime(0.55, audioContext.currentTime);
+          gainMelody.gain.setValueAtTime(0.53, audioContext.currentTime);
 
           heartLfo.connect(heartLfoGain);
           heartLfoGain.connect(gainHeart.gain);
@@ -804,11 +804,11 @@ const DetoxSession = ({
           const gainFloat3 = audioContext.createGain();
           const gainPad = audioContext.createGain();
 
-          gainMain.gain.setValueAtTime(0.05, audioContext.currentTime);
-          gainFloat1.gain.setValueAtTime(0.04, audioContext.currentTime);
-          gainFloat2.gain.setValueAtTime(0.03, audioContext.currentTime);
-          gainFloat3.gain.setValueAtTime(0.02, audioContext.currentTime);
-          gainPad.gain.setValueAtTime(0.06, audioContext.currentTime);
+          gainMain.gain.setValueAtTime(0.55, audioContext.currentTime);
+          gainFloat1.gain.setValueAtTime(0.54, audioContext.currentTime);
+          gainFloat2.gain.setValueAtTime(0.53, audioContext.currentTime);
+          gainFloat3.gain.setValueAtTime(0.52, audioContext.currentTime);
+          gainPad.gain.setValueAtTime(0.56, audioContext.currentTime);
 
           dreamLfo1.connect(dreamGain1);
           dreamLfo2.connect(dreamGain2);
