@@ -213,12 +213,11 @@ const Home = () => {
               <div className="inline-flex items-center space-x-2 sm:space-x-3 px-4 sm:px-6 py-2 sm:py-3 rounded-full endel-card">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-400 rounded-full animate-pulse" />
                 <span className="text-xs sm:text-sm text-muted-foreground">
-                  AI Engine Active
+                Motor de Sonidos sonoros
                 </span>
               </div>
               <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl px-4">
-                Personalized soundscapes generated in real-time based on your
-                activity and environment
+              Sistema que genera estímulos psicológicos adaptativos según tu estado emocional, actividad y entorno, con el objetivo de mejorar tu bienestar mental, concentración o relajación.
               </p>
             </div>
 
